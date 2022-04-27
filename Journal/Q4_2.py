@@ -1,12 +1,17 @@
-import sys
-ch=0
-while ch!=2:
-    ch=int(input('1.Input\t\t2.Exit'))
-    if ch==1:
-        a=int(input('Enter First No. : '))
-        b=int(input('Enter Second No. : '))
-        try:
-            i = a/b 
-            print('division : ',i)
-        except ZeroDivisionError as e:
-            print (e)
+class MyError(Exception):
+
+    # Constructor or Initializer
+    def __init__(self, value):
+        self.value = value
+
+    # __str__ is to print() the value
+    def __str__(self):
+        return repr(self.value)
+
+
+try:
+    raise (MyError(3 * 2))
+
+# Value of Exception is stored in error
+except MyError as error:
+    print('A New Exception occured: ', error.value)
