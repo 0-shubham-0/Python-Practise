@@ -16,4 +16,4 @@ for item in p:
 print('number of integers in list is =', ints,
       'float =', floats,
       'strings =', strings,
-      'booleans =',bools)
+      'booleans =', bools)
