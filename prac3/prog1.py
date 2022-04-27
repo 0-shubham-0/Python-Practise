@@ -1,12 +1,14 @@
 # define shape class with appropriate members to calculate and display area, perimeter of different shapes
 class Shape:
-    def circle(self, radius):
+    @staticmethod
+    def circle(radius):
         area = 3.14 * radius ** 2
         perimeter = 2 * 3.14 * radius
         print("{0} is the area".format(area))
         print("{0} is the perimeter".format(perimeter))
 
-    def rectangle(self, side1, side2):
+    @staticmethod
+    def rectangle(side1, side2):
         area = side1 * side2
         perimeter = (side1 * 2) + (side2 * 2)
         print("{0} is the area".format(area))

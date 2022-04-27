@@ -15,3 +15,4 @@ try:
 # Value of Exception is stored in error
 except MyError as error:
     print('A New Exception occured: ', error.value)
+    

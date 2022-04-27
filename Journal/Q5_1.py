@@ -1,25 +1,24 @@
-class Student:  
-    roll_num = 11  
-    name = "Joseph"  
-  
-    def __init__(self):  
-        print('Default Constructor',self.roll_num,self.name) 
+class Student1:
+    roll_num = None
+    name = "No-Name"
 
-    def display(self,subj, marks):
-        self.subj = subj
-        self.marks = marks
-        print('Parameterized Constructor',self.subj,self.marks)
-    # def show(self):
-        # print("student marks",self.marks) 
+    def __init__(self):
+        print(f'''Default Constructor:
+        Name : {self.name}
+        Roll no. : {self.roll_num}''')
 
-# Student = student("25")
-# Student.show()
 
-    
-  
-st = Student()  
-# st.display() 
-st.display('Maths',98)
-# Student.show()
+class Student2:
+    name = ''
+    roll_num = ''
 
- 
+    def __init__(self, name, roll_num):
+        self.name = name
+        self.roll_num = roll_num
+        print(f'''Parameterised Constructor:
+        Name : {self.name}
+        Roll no. : {self.roll_num}''')
+
+
+st1 = Student1()
+st2 = Student2("Shbham", 58)
