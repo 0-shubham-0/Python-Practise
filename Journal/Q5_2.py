@@ -32,6 +32,6 @@ feet_2 = int(input("Feet : "))
 inch_2 = int(input("Inch : "))
 
 dist_cal = Dist()
-dist_cal.distance1(feet_1,inch_1)
-dist_cal.distance2(feet_2,inch_2)
+dist_cal.distance1(feet_1, inch_1)
+dist_cal.distance2(feet_2, inch_2)
 dist_cal.sum()
