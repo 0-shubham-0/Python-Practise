@@ -20,7 +20,10 @@ print("popped index 2")
 print(l)
 
 print(l.index(3))
-
+h = "jo"
+print(h)
+h.capitalize()
+print(h.index('j', 0, 1))
 extend = [10, 12]
 l.extend(extend)
 print(l)

@@ -7,13 +7,13 @@ class Dist:
         self.inch_1 = None
         self.inch_2 = None
 
-    def distance1(self, feet_1, inch_1):
-        self.feet_1 = feet_1
-        self.inch_1 = inch_1
+    def distance1(self, f_1, i_1):
+        self.feet_1 = f_1
+        self.inch_1 = i_1
 
-    def distance2(self, feet_2, inch_2):
-        self.feet_2 = feet_2
-        self.inch_2 = inch_2
+    def distance2(self, f_2, i_2):
+        self.feet_2 = f_2
+        self.inch_2 = i_2
 
     def sum(self):
         self.feet = self.feet_1 + self.feet_2
@@ -32,6 +32,6 @@ feet_2 = int(input("Feet : "))
 inch_2 = int(input("Inch : "))
 
 dist_cal = Dist()
-dist_cal.distance1(feet_1,inch_1)
-dist_cal.distance2(feet_2,inch_2)
+dist_cal.distance1(feet_1, inch_1)
+dist_cal.distance2(feet_2, inch_2)
 dist_cal.sum()
