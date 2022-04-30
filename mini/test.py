@@ -29,6 +29,7 @@ class MyWindow(QMainWindow):
     def update(self):
         self.label.adjustSize()
 
+
 def window():
     app = QApplication(sys.argv)
     win = MyWindow()
