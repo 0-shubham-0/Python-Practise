@@ -4,7 +4,7 @@ def fact(no):
     while i <= no:
         factorial = factorial * i
         i = i + 1
-    print("factorial of ", no, ' is ', fact)
+    print("factorial of ", no, ' is ', factorial)
 
 
 num = int(input('Enter Number : '))

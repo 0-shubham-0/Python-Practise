@@ -9,7 +9,7 @@
 
 
 from PyQt5 import QtCore, QtWidgets
-from try_mini import pdf2, python2
+from Mini_projects.try_mini import python1, pdf2
 
 
 class Ui_MainWindow(QtWidgets.QMainWindow):
@@ -62,8 +62,8 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
         self.actionOpen.triggered.connect(self.openFile)
-        self.open_pdf.clicked.connect(self.openFile
-                                      )
+        self.open_pdf.clicked.connect(self.openFile)
+
     def openFile(self):
         filename, _ = QtWidgets.QFileDialog.getOpenFileName(
             self,
@@ -77,7 +77,8 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
         if filename:
             print(filename)
             if filename.endswith('.pdf'):
-                pdf2.pdf_to_txt(filename)
+                text = pdf2.pdf_to_txt(filename)
+                python1.summary(text)
             # try:
             #     with open(filename, 'r') as fh:
             #         pdf2.pdf_to_txt(fh)

@@ -1,4 +1,3 @@
-import tkinter
 from tkinter import *
 import mysql.connector
 import mysql
@@ -38,7 +37,7 @@ def vr():
 l4 = Label(win, text='USERNAME\tFIRST NAME\tLAST NAME\t\t\tEMAIL', font=36)
 l4.place(x=300, y=400)
 
-b1 = tkinter.Button(win, text='VIEW RECORDS', command=vr, font=36, bg='#f0af75')
+b1 = Button(win, text='VIEW RECORDS', command=vr, font=36, bg='#f0af75')
 b1.place(x=800, y=350)
 
 
@@ -67,7 +66,7 @@ t5.place(x=900, y=200)
 t6 = Entry(win, font=36)
 t6.place(x=900, y=300)
 
-b2 = tkinter.Button(win, text='SAVE', command=sv, font=36, bg='#f0af75')
+b2 = Button(win, text='SAVE', command=sv, font=36, bg='#f0af75')
 b2.place(x=300, y=350)
 
 win.mainloop()

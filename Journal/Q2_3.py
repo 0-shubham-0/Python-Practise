@@ -1,5 +1,6 @@
 n = [12, 3, 2, 5]
 print(n)
+# Sorting algo
 for j in range(len(n)):
     for i in range(1, (len(n)) - j):
         if n[i] < n[i - 1]:

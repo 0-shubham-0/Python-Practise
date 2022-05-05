@@ -10,7 +10,7 @@ for name in names:
         ind.append(list_len)
 
 if count > 0:
-    print("name is present in the list for", count, "number of times", end=' ')
+    print(f"Name {username} is present in the list for", count, "number of times", end=' ')
     print("at", ind)
 else:
     print(username, "is not present in the list")
