@@ -7,7 +7,7 @@ def convert(input_txt, key):
     output_txt=''
     for char in input_txt:
         if char in all_letters:
-            index = all_letters.index(str(char))
+            index = all_letters.index(char)
             output_txt+=all_letters[(index + key) % 26]
         else:
             output_txt+=char
