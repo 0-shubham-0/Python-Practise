@@ -1,7 +1,5 @@
-# Python for RSA asymmetric cryptographic algorithm.
-# For demonstration, values are
-# relatively small compared to practical application
 import math
+
 def gcd(a, h):
 	temp = 0
 	while(1):
@@ -17,7 +15,6 @@ q = 7
 n = p*q
 e = 2
 phi = (p-1)*(q-1)
-
 while (e < phi):
 
 	# e must be co-prime to phi and
@@ -42,3 +39,4 @@ print("Encrypted data = ", c)
 # Decryption m = (c ^ d) % n
 m = pow(c, d)
 m = math.fmod(m, n)
+print("Decrypted data = ", m)
