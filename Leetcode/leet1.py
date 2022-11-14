@@ -15,7 +15,14 @@ def twoSum_onepass(nums, target):
     :type target: int
     :rtype: List[int]
     """
-f
+    prevMap={}
+    for i, n in enumerate(nums):
+        diff = target - n
+        if diff in prevMap:
+            return [prevMap[diff], i]
+        prevMap[n]=i
+    return
+    
 
 
 # print(twoSum([1,2,3],5))
