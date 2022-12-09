@@ -22,3 +22,9 @@ class Solution:
                 l-=1
                 r+=1
         return s[left:right+1]
+
+
+
+a="fawdaw"
+a = '#%s#' % ('#'.join(a))
+print(a)
