@@ -24,7 +24,5 @@ class Solution:
         return s[left:right+1]
 
 
-
-a="fawdaw"
-a = '#%s#' % ('#'.join(a))
-print(a)
+P = [0] * 5
+print(P)
