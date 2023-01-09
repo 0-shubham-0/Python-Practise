@@ -2,6 +2,7 @@ class Solution:
     def preorderTraversal_without_stack(self, root: Optional[TreeNode]) -> List[int]:
             ret = []
             def sol(root):
+                # if root:   # idk why but this increases the time taken n space
                 if not root:
                     return
                 ret.append(root.val)
