@@ -35,3 +35,12 @@ print(checkInclusion(s1,s2))
 # b={}
 # b=a.copy()
 # print(a,b)
+
+
+arr= ["dwaf",2,4,5]
+
+print(arr[0][1:])
+
+s=set(arr)
+print(s)
+print(1 in s)
