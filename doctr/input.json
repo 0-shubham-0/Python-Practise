@@ -1,0 +1,268 @@
+[
+  {
+    "id": 6,
+    "annotations": [
+      {
+        "id": 7,
+        "completed_by": 1,
+        "result": [
+          {
+            "original_width": 3538,
+            "original_height": 5000,
+            "image_rotation": 0,
+            "value": {
+              "x": 69.50354609929079,
+              "y": 21.237458193979933,
+              "width": 8.983451536643026,
+              "height": 1.5050167224080269,
+              "rotation": 0
+            },
+            "id": "-2bxOtVqkh",
+            "from_name": "bbox",
+            "to_name": "image",
+            "type": "rectangle",
+            "origin": "manual"
+          },
+          {
+            "original_width": 3538,
+            "original_height": 5000,
+            "image_rotation": 0,
+            "value": {
+              "x": 69.50354609929079,
+              "y": 21.237458193979933,
+              "width": 8.983451536643026,
+              "height": 1.5050167224080269,
+              "rotation": 0,
+              "labels": ["Text"]
+            },
+            "id": "-2bxOtVqkh",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "original_width": 3538,
+            "original_height": 5000,
+            "image_rotation": 0,
+            "value": {
+              "x": 69.50354609929079,
+              "y": 21.237458193979933,
+              "width": 8.983451536643026,
+              "height": 1.5050167224080269,
+              "rotation": 0,
+              "text": ["Invoice Date"]
+            },
+            "id": "-2bxOtVqkh",
+            "from_name": "transcription",
+            "to_name": "image",
+            "type": "textarea",
+            "origin": "manual"
+          },
+          {
+            "original_width": 3538,
+            "original_height": 5000,
+            "image_rotation": 0,
+            "value": {
+              "x": 86.28841607565012,
+              "y": 21.237458193979933,
+              "width": 9.456264775413711,
+              "height": 1.5050167224080269,
+              "rotation": 0
+            },
+            "id": "xRY8EDxwdE",
+            "from_name": "bbox",
+            "to_name": "image",
+            "type": "rectangle",
+            "origin": "manual"
+          },
+          {
+            "original_width": 3538,
+            "original_height": 5000,
+            "image_rotation": 0,
+            "value": {
+              "x": 86.28841607565012,
+              "y": 21.237458193979933,
+              "width": 9.456264775413711,
+              "height": 1.5050167224080269,
+              "rotation": 0,
+              "labels": ["Text"]
+            },
+            "id": "xRY8EDxwdE",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "original_width": 3538,
+            "original_height": 5000,
+            "image_rotation": 0,
+            "value": {
+              "x": 86.28841607565012,
+              "y": 21.237458193979933,
+              "width": 9.456264775413711,
+              "height": 1.5050167224080269,
+              "rotation": 0,
+              "text": ["31/05/2019"]
+            },
+            "id": "xRY8EDxwdE",
+            "from_name": "transcription",
+            "to_name": "image",
+            "type": "textarea",
+            "origin": "manual"
+          },
+          {
+            "original_width": 3538,
+            "original_height": 5000,
+            "image_rotation": 0,
+            "value": {
+              "x": 69.50354609929079,
+              "y": 21.237458193979933,
+              "width": 5.673758865248227,
+              "height": 1.5050167224080269,
+              "rotation": 0
+            },
+            "parentID": "-2bxOtVqkh",
+            "id": "pN_JPvU9CS",
+            "from_name": "bbox",
+            "to_name": "image",
+            "type": "rectangle",
+            "origin": "manual"
+          },
+          {
+            "original_width": 3538,
+            "original_height": 5000,
+            "image_rotation": 0,
+            "value": {
+              "x": 69.50354609929079,
+              "y": 21.237458193979933,
+              "width": 5.673758865248227,
+              "height": 1.5050167224080269,
+              "rotation": 0,
+              "labels": ["Text"]
+            },
+            "parentID": "-2bxOtVqkh",
+            "id": "pN_JPvU9CS",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "original_width": 3538,
+            "original_height": 5000,
+            "image_rotation": 0,
+            "value": {
+              "x": 69.50354609929079,
+              "y": 21.237458193979933,
+              "width": 5.673758865248227,
+              "height": 1.5050167224080269,
+              "rotation": 0,
+              "text": ["Invoice"]
+            },
+            "parentID": "-2bxOtVqkh",
+            "id": "pN_JPvU9CS",
+            "from_name": "transcription",
+            "to_name": "image",
+            "type": "textarea",
+            "origin": "manual"
+          },
+          {
+            "original_width": 3538,
+            "original_height": 5000,
+            "image_rotation": 0,
+            "value": {
+              "x": 75.177304964539,
+              "y": 21.237458193979933,
+              "width": 3.309692671394799,
+              "height": 1.5050167224080269,
+              "rotation": 0
+            },
+            "parentID": "-2bxOtVqkh",
+            "id": "e7WP3v7wu_",
+            "from_name": "bbox",
+            "to_name": "image",
+            "type": "rectangle",
+            "origin": "manual"
+          },
+          {
+            "original_width": 3538,
+            "original_height": 5000,
+            "image_rotation": 0,
+            "value": {
+              "x": 75.177304964539,
+              "y": 21.237458193979933,
+              "width": 3.309692671394799,
+              "height": 1.5050167224080269,
+              "rotation": 0,
+              "labels": ["Text"]
+            },
+            "parentID": "-2bxOtVqkh",
+            "id": "e7WP3v7wu_",
+            "from_name": "label",
+            "to_name": "image",
+            "type": "labels",
+            "origin": "manual"
+          },
+          {
+            "original_width": 3538,
+            "original_height": 5000,
+            "image_rotation": 0,
+            "value": {
+              "x": 75.177304964539,
+              "y": 21.237458193979933,
+              "width": 3.309692671394799,
+              "height": 1.5050167224080269,
+              "rotation": 0,
+              "text": ["Date"]
+            },
+            "parentID": "-2bxOtVqkh",
+            "id": "e7WP3v7wu_",
+            "from_name": "transcription",
+            "to_name": "image",
+            "type": "textarea",
+            "origin": "manual"
+          },
+          {
+            "from_id": "-2bxOtVqkh",
+            "to_id": "xRY8EDxwdE",
+            "type": "relation",
+            "direction": "right",
+            "labels": []
+          }
+        ],
+        "was_cancelled": false,
+        "ground_truth": false,
+        "created_at": "2023-02-28T13:52:36.064175Z",
+        "updated_at": "2023-02-28T13:54:19.122577Z",
+        "lead_time": 686.885,
+        "prediction": {},
+        "result_count": 0,
+        "task": 6,
+        "project": 7,
+        "parent_prediction": null,
+        "parent_annotation": null
+      }
+    ],
+    "file_upload": "38b17833-laxmi-may_0001-1_deskew_corrected.jpg",
+    "drafts": [],
+    "predictions": [],
+    "data": {
+      "ocr": "/data/upload/7/38b17833-laxmi-may_0001-1_deskew_corrected.jpg"
+    },
+    "meta": {},
+    "created_at": "2023-02-28T13:42:19.433256Z",
+    "updated_at": "2023-02-28T13:54:19.179062Z",
+    "inner_id": 1,
+    "total_annotations": 1,
+    "cancelled_annotations": 0,
+    "total_predictions": 0,
+    "comment_count": 0,
+    "unresolved_comment_count": 0,
+    "last_comment_updated_at": null,
+    "project": 7,
+    "updated_by": 1,
+    "comment_authors": []
+  }
+]
