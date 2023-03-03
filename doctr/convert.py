@@ -50,7 +50,7 @@ for label in data:
         box.append(label['value']['height'])
         children[i]['box']=box
         i+=1
-print(children)
+
 
 i=0
 output=[]
@@ -65,15 +65,26 @@ for label in data:
             box.append(label['value']['width'])
             box.append(label['value']['height'])
             output[i]['box']=box
+            output[i]['linking']=[]
             output[i]['label']=label['value']['labels']
-        
+            output[i]['words']=[]
     i+=1
 
+for child in children:
+    parentID=child['parentID']
+    for label in output:
+        if label['id']==parentID:
+            label['words'].append(child)
+            break
+links=[]
+for label in data:
+    if label.get('from_id',0):
+        links.append([label['from_id'],label['to_id']])
 
-
-
-
-
+for link in links:
+    for label in output:
+        if link[0]==label['id'] or link[1]==label['id']:
+            label['linking'].append(link)
 
 
 with open("doctr/new.json",'w') as f:
