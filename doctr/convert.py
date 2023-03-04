@@ -31,7 +31,7 @@ for label in data:
     if label.get('value',0) and label['value'].get('labels',0):
         label_name.append(label['value']['labels'])
         data.remove(label)
-# removing redundant keys
+# remove redundant keys
 i=0
 for label in data:
     if label.get('original_width',0): del label['original_width']
@@ -46,8 +46,8 @@ for label in data:
         i+=1
 
 i=0
-# convertion
 
+# convertion
 # creting list of children word or sub-words
 children=[]
 for label in data:
@@ -56,6 +56,7 @@ for label in data:
         children[i]['text']=label['value']['text']
         children[i]['box']=getBox(label)
         i+=1
+
 # creating the output
 i=0
 output=[]
@@ -69,6 +70,7 @@ for label in data:
             output[i]['label']=label['value']['labels']
             output[i]['words']=[]
     i+=1
+
 # anding the sub-words
 for child in children:
     parentID=child['parentID']
@@ -82,6 +84,7 @@ links=[]
 for label in data:
     if label.get('from_id',0):
         links.append([label['from_id'],label['to_id']])
+
 # adding the links to output
 for link in links:
     for label in output:
