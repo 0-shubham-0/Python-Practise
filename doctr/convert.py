@@ -10,7 +10,7 @@ def getBox(l:dict):
 
 
 # loading the input json file
-with open("doctr\input.json") as f:
+with open("input.json") as f:
     data=json.load(f)
 
 
@@ -92,5 +92,5 @@ for link in links:
             label['linking'].append(link)
 
 # creating output json file
-with open("doctr/new.json",'w') as f:
+with open("new.json",'w') as f:
     json.dump(output, f, indent=2)
