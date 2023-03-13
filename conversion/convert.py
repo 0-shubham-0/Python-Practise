@@ -4,13 +4,13 @@ def getBox(l:dict):
     box=[]
     box.append(l['value']['x'])
     box.append(l['value']['y'])
-    box.append(l['value']['width'])
-    box.append(l['value']['height'])
+    box.append(l['value']['x']+l['value']['width'])
+    box.append(l['value']['y']+l['value']['height'])
     return box
 
 
 # loading the input json file
-with open("input.json") as f:
+with open("conversion/input.json") as f:
     data=json.load(f)
 
 
@@ -92,5 +92,5 @@ for link in links:
             label['linking'].append(link)
 
 # creating output json file
-with open("new.json",'w') as f:
+with open("output.json",'w') as f:
     json.dump(output, f, indent=2)
