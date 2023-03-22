@@ -1,0 +1,48 @@
+{
+    "data":{
+        "ocr": "https://dbit.in/images/index_webp/Information%20Technology.webp"
+    },
+    "predictions": [
+        {
+            "result": [
+                {
+                  "original_width": 735,
+                  "original_height": 394,
+                  "image_rotation": 0,
+                  "value": {
+                    "x": 6.900533921435462,
+                    "y": 15.735230076934242,
+                    "width": 16.609051990567973,
+                    "height": 11.148207286979245,
+                    "rotation": 0
+                  },
+                  "parentID": "rYdS3p2aJP",
+                  "id": "dOSzVaOgW3",
+                  "from_name": "bbox",
+                  "to_name": "image",
+                  "type": "rectangle",
+                  "origin": "manual"
+                },
+                {
+                  "original_width": 1154,
+                  "original_height": 611,
+                  "image_rotation": 0,
+                  "value": {
+                    "x": 6.900533921435462,
+                    "y": 15.735230076934242,
+                    "width": 16.609051990567973,
+                    "height": 11.148207286979245,
+                    "rotation": 0,
+                    "text": ["Invoice"]
+                  },
+                  "parentID": "rYdS3p2aJP",
+                  "id": "dOSzVaOgW3",
+                  "from_name": "transcription",
+                  "to_name": "image",
+                  "type": "textarea",
+                  "origin": "manual"
+                }
+            ]
+        }
+    ]
+}
