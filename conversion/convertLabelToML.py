@@ -48,11 +48,11 @@ for label in data:
 i=0
 
 # convertion
-# creting list of children word or sub-words
+# creating list of children word or sub-words
 children=[]
 for label in data:
     if label.get('parentID',0):
-        children.append({'parentID':label['parentID']})
+        children.append({'id':label['parentID']})
         children[i]['text']=label['value']['text']
         children[i]['box']=getBox(label)
         i+=1
@@ -73,7 +73,7 @@ for label in data:
 
 # anding the sub-words
 for child in children:
-    parentID=child['parentID']
+    parentID=child['id']
     for label in output:
         if label['id']==parentID:
             label['words'].append(child)

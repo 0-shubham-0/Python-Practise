@@ -1,0 +1,122 @@
+{
+  "data": {
+    "ocr": "https://i.ibb.co/BZ797V7/gg.jpg"
+  },
+  "predictions": [
+    {
+      "result": [
+        {
+          "original_width": 1154,
+          "original_height": 611,
+          "image_rotation": 0,
+          "value": {
+            "x": 6.900533921435462,
+            "y": 15.735230076934242,
+            "width": 18.082917615207563,
+            "height": 10.769786645473785,
+            "rotation": 0
+          },
+          "id": "11",
+          "from_name": "bbox",
+          "to_name": "image",
+          "type": "rectangle",
+          "origin": "manual"
+        },
+        {
+          "original_width": 1154,
+          "original_height": 611,
+          "image_rotation": 0,
+          "value": {
+            "x": 6.900533921435462,
+            "y": 15.735230076934242,
+            "width": 18.082917615207563,
+            "height": 10.769786645473785,
+            "rotation": 0,
+            "text": [
+              "Invoice Date"
+            ]
+          },
+          "id": "11",
+          "from_name": "transcription",
+          "to_name": "image",
+          "type": "textarea",
+          "origin": "manual"
+        },
+        {
+          "original_width": 1154,
+          "original_height": 611,
+          "image_rotation": 0,
+          "value": {
+            "x": 6.900533921435462,
+            "y": 15.735230076934242,
+            "width": 10.082917615207565,
+            "height": 10.769786645473785,
+            "rotation": 0
+          },
+          "id": "12",
+          "from_name": "bbox",
+          "to_name": "image",
+          "type": "rectangle",
+          "origin": "manual"
+        },
+        {
+          "original_width": 1154,
+          "original_height": 611,
+          "image_rotation": 0,
+          "value": {
+            "x": 6.900533921435462,
+            "y": 15.735230076934242,
+            "width": 10.082917615207565,
+            "height": 10.769786645473785,
+            "rotation": 0,
+            "text": [
+              "Invoice"
+            ]
+          },
+          "id": "12",
+          "from_name": "transcription",
+          "to_name": "image",
+          "type": "textarea",
+          "origin": "manual"
+        },
+        {
+          "original_width": 1154,
+          "original_height": 611,
+          "image_rotation": 0,
+          "value": {
+            "x": 12.177304964539,
+            "y": 15.237458193979933,
+            "width": 6.1323877068558,
+            "height": 8.267558528428093,
+            "rotation": 0
+          },
+          "id": "13",
+          "from_name": "bbox",
+          "to_name": "image",
+          "type": "rectangle",
+          "origin": "manual"
+        },
+        {
+          "original_width": 1154,
+          "original_height": 611,
+          "image_rotation": 0,
+          "value": {
+            "x": 12.177304964539,
+            "y": 15.237458193979933,
+            "width": 6.1323877068558,
+            "height": 8.267558528428093,
+            "rotation": 0,
+            "text": [
+              "Date"
+            ]
+          },
+          "id": "13",
+          "from_name": "transcription",
+          "to_name": "image",
+          "type": "textarea",
+          "origin": "manual"
+        }
+      ]
+    }
+  ]
+}
