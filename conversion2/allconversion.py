@@ -1,13 +1,13 @@
+import json
 class Convs:
-    def mlToLabel(self,jsonPath:str,imgPath:str):
+    def mlToLabel(self,jsonPath:str,imgPath:str,height,width):
         import copy
-        import json
         with open(jsonPath) as f:
             data = json.load(f)
         data=data['form']
         filePath = imgPath
-        imgHeight = 611
-        imgWidth = 1154
+        imgHeight = height
+        imgWidth = width
         output = {
             "data": {
                 "ocr": filePath
@@ -38,10 +38,10 @@ class Convs:
 
         def getLabel(label, id=None):
             t = template.copy()
-            t['value']['x'] = label['box'][0]
-            t['value']['y'] = label['box'][1]
-            t['value']['width'] = label['box'][2]-label['box'][0]
-            t['value']['height'] = label['box'][3]-label['box'][1]
+            t['value']['x'] = (label['box'][0] / width) * 100
+            t['value']['y'] = (label['box'][1] / height) * 100
+            t['value']['width'] = ((label['box'][2]-label['box'][0])/width)*100
+            t['value']['height'] = ((label['box'][3]-label['box'][1])/height) * 100.0
             t['id'] = str(id)
             return t
 
@@ -66,15 +66,13 @@ class Convs:
                     filledLabel4['type']="textarea"
                     output["predictions"][0]["result"].append(filledLabel3)
                     output["predictions"][0]["result"].append(filledLabel4)
+                    filledLabel3.clear
+                    filledLabel4.clear
             filledLabel1.clear
             filledLabel2.clear
-            filledLabel3.clear
-            filledLabel4.clear
-            break
         with open("./conversion2/forLabel.json",'w') as f:
             json.dump(output, f, indent=2)
     def labelToMl(self,path:str):
-        import json
         def getBox(l:dict):
             box=[]
             box.append(l['value']['x'])
@@ -138,7 +136,7 @@ class Convs:
         for label in data:
             if not label.get('parentID',0):
                 if label.get('id',0):output.append({'id':label['id']})
-                print(output,i)
+                # print(output,i)
                 if label.get('value',0):
                     output[i]['text']=label['value']['text']
                     output[i]['box']=getBox(label)
@@ -168,10 +166,43 @@ class Convs:
                     label['linking'].append(link)
 
         # creating output json file
-        with open("./conversion2/output.json",'w') as f:
+        with open("./conversion2/changedMl.json",'w') as f:
+            json.dump(output, f, indent=2)
+    def csvToMl(self,path:str):
+        
+        import pandas as pd
+        df=pd.read_csv(path)
+        # delete the second and third column
+        df.drop(df.columns[[5,6,7,8,9,10,11,12]], axis=1, inplace=True)
+        ids=10
+        template = {
+            "id": 0,
+            "text": [],
+            "box": []
+        }
+        output={
+            "form": []
+        }
+        # iterate over the dataframe
+        for index, row in df.iterrows():
+            # create a new label
+            label=template.copy()
+            # set the label id
+            label['id']=str(ids)
+            # set the label text
+            label['text']=row['word']
+            # set the label box
+            label['box']=[row['word_x1'],row['word_y1'],row['word_x2'],row['word_y2']]
+            # add the label to the output
+            output['form'].append(label)
+            # increment the label id
+            ids+=1
+        outputPath="./conversion2/mlData.json"
+        with open(outputPath,'w') as f:
             json.dump(output, f, indent=2)
 
-
+csv_path="./conversion2/line_details.csv"
 obj=Convs()
-# obj.mlToLabel("D:\Python\Practise\conversion2\mlAnot.json","https://i.ibb.co/BZ797V7/gg.jpg")
-obj.labelToMl("D:\Python\Practise\conversion2\LabelOutput.json")
+# obj.csvToMl(csv_path)
+# obj.mlToLabel("D:\Python\Practise\conversion2\mlData.json","/data/upload/17/35cccf03-laxmi-may_0001-1_deskew_corrected.jpg",5000,3538)
+obj.labelToMl("D:/Python/Practise/conversion2/fromlabel.json")
