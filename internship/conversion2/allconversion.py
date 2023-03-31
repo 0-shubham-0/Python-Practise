@@ -249,5 +249,5 @@ class Convs:
 csv_path="./conversion2/line_details.csv"
 obj=Convs()
 # obj.csvToMl(csv_path)
-# obj.mlToLabel("D:\Python\Practise\conversion2\mlData.json","/data/upload/17/35cccf03-laxmi-may_0001-1_deskew_corrected.jpg",5000,3538)
+obj.mlToLabel("\mlData.json","/data/upload/17/35cccf03-laxmi-may_0001-1_deskew_corrected.jpg",5000,3538)
 # obj.labelToMl("D:/Python/Practise/conversion2/fromlabel.json")
