@@ -1,2 +1,6 @@
-a=[1,2,4,5,3]
-sum=
+        n=len(salary)
+        salary.sort()
+        sum = 0
+        for s in range(n):
+            sum += salary[s]
+        return (sum - salary[0] - salary[-1]) / (n - 2)
